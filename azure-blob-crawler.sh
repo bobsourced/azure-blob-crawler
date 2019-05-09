@@ -3,7 +3,7 @@
 #PRIOR TO USING THIS SCRIPT YOU WILL NEED TO RUN 'az login' TO SET THE ENVIRONMENT
 
 #Change the AZURE variable to the folder where you installed the Azure CLI 2.0
-AZURE=/home/jose/bin/az
+AZURE=/usr/local/bin/az
 CURR=$(date -u '+%Y-%m-%dT%RZ') 
 #I am using the UTC hour and adding 60 minutes for the SAS token expiration
 CURRPLUSSIXTY=$(date -u -d "($CURR) +60 minutes" +%Y-%m-%dT%RZ)
